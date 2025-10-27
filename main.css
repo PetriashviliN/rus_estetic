@@ -1,0 +1,710 @@
+/* ________________________________________________ფონტი________________________________________________*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* ________________________________________________NAV________________________________________________*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 6px 10px hsl(0 4% 15% / 10%);
+  z-index: 100;
+
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 19px;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imglogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ________________________________________________SEARCH________________________________________________*/
+#searchInput {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  font-size: 14px;
+  width: 190px;
+  outline: none;
+  color: black;
+}
+
+#searchInput::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+
+/* ________________________________________________INFO________________________________________________*/
+
+.epilation-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f4f5fb;
+  height: 100vh;
+  width: 100%;
+  padding-left: 8%;
+}
+
+.epilation-text {
+  flex: 1;
+  max-width: 45%;
+}
+
+.epilation-text h1 {
+  font-size: 4rem;
+  color: #000000;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.epilation-text .tag {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.epilation-text .price {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-gold {
+  background-color: #6b87d4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-purple {
+  background-color: #7b797c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.epilation-image {
+  flex: 1;
+  background-image: url("./photo_2025-10-07_21-04-33.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 100vh;
+}
+
+/* ________________________________________________ინფორმაცია________________________________________________*/
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+}
+
+.tab-btn {
+  background: #f9f1f6;
+  color: #536eb9;
+  border: 2px solid #536eb9;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn:hover {
+  background: #536eb9;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(192, 78, 138, 0.3);
+}
+
+.tab-btn.active {
+  background: #536eb9;
+  color: #ffffff;
+  box-shadow: 0 5px 12px rgba(192, 78, 138, 0.3);
+}
+
+/* ________________________________________________ტექსტი________________________________________________*/
+.info {
+  max-width: 1500px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  background: #f8f4f7;
+  color: #536eb9;
+  border: 2px solid #536eb9;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: #536eb9;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(192, 78, 138, 0.3);
+}
+
+.tab-btn.active {
+  background: #536eb9;
+  color: #fff;
+}
+
+.tab-item {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.tab-item.active {
+  display: block;
+}
+
+.txt h1,
+.txt h2 {
+  color: #536eb9;
+  margin-top: 20px;
+}
+
+.txt p {
+  margin-bottom: 12px;
+}
+
+.txt p i {
+  color: #536eb9;
+  margin-right: 8px;
+}
+
+/* ________________________________________________ფასები________________________________________________*/
+.prices-section {
+  padding: 6% 10%;
+  font-family: "FiraGO", sans-serif;
+  color: #222;
+}
+
+.prices-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.prices-header h1 {
+  font-size: 3.5rem;
+  color: #4a63c8;
+  font-weight: 700;
+  position: relative;
+}
+
+.prices-header h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: #6b87d4;
+  border-radius: 2px;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(99, 126, 216, 0.08);
+  padding: 20px 25px;
+  transition: all 0.3s ease;
+}
+
+.price-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(99, 126, 216, 0.15);
+}
+
+.zone {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #4a63c8;
+}
+
+.btn-book {
+  background: linear-gradient(135deg, #6b87d4, #4a63c8);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 10px rgba(75, 98, 200, 0.2);
+}
+
+.btn-book:hover {
+  background: linear-gradient(135deg, #5c73c5, #3d54b2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(75, 98, 200, 0.25);
+}
+
+/* ________________________________________________კონტაქტი________________________________________________*/
+.info_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.contacts {
+  flex: 1 1 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacts .tag {
+  font-size: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts p {
+  margin: 15px 20px;
+  font-size: 21px;
+  padding-top: 10px;
+}
+
+.contacts i {
+  margin-right: 10px;
+  color: #6b87d4;
+}
+
+/* ________________________________________________სოც ქსელი________________________________________________*/
+.contact_link {
+  margin-top: 40px;
+}
+
+.links {
+  margin-top: 20px;
+  padding-left: 100px;
+  font-size: 30px;
+}
+
+/* ________________________________________________რუკა________________________________________________*/
+.map {
+  flex: 2 1 1000px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map .tag {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.map .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.map .title i {
+  margin-right: 8px;
+  color: #6b87d4;
+}
+
+iframe {
+  border-radius: 8px;
+}
+
+/* ________________________________________________ფუტერი________________________________________________*/
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 30px;
+}
+
+footer .contact_link {
+  margin-bottom: 15px;
+}
+
+footer .contact_link p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+footer .contact_link a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+footer .contact_link a:hover {
+  color: #6b87d4;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* ________________________________________________აქციები________________________________________________*/
+
+
+button {
+  background-color: #637ed8;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #4f66bb;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.popup-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+
+.offer {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offer h3 {
+  color: #637ed8;
+  margin-bottom: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ________________________________________________________________________________________________*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* __________________________________________ტელეფონის ვერსია______________________________________________________*/
+@media (max-width: 768px) {
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* --- HEADER --- */
+  header {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    position: relative;
+  }
+
+  .Logo {
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+    gap: 8px;
+  }
+
+  .Logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  /* --- ღილაკი "ნახე აქციები" --- */
+  #openPopupBtn {
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #openPopupBtn:hover {
+    opacity: 0.85;
+  }
+
+  /* --- მთავარი ბლოკი (ლაზერული ეპილაცია) --- */
+  .epilation-section {
+    flex-direction: column;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .epilation-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .epilation-text .tag {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .epilation-text .price {
+    font-size: 16px;
+    margin: 8px 0 18px;
+    color: #a67c00;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-gold,
+  .btn-purple {
+    width: 100%;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .epilation-image {
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+
+  /* --- ღილაკები --- */
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .tab-btn {
+    flex: 1 1 48%;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 50px;
+  }
+
+  .txt {
+    padding: 15px;
+  }
+
+  .txt h1, .txt h2 {
+    font-size: 18px;
+  }
+
+  /* --- ფასები --- */
+  .prices-section {
+    padding: 10px;
+  }
+
+  .price-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  /* --- კონტაქტი --- */
+  .info_container {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .contacts {
+    text-align: center;
+  }
+  .map iframe {
+    width: 100%;
+    height: 800px;
+  }
+  footer {
+    text-align: center;
+    font-size: 13px;
+    padding: 15px 0;
+  }
+}
